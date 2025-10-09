@@ -13,5 +13,5 @@ public static int linearSearch(int[] lista, int valor) {
 	}
 	// No estaba
 	return -1;
-}
+ }
 }
