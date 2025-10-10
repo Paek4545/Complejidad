@@ -1,7 +1,16 @@
 package es.upm.aled.complejidad;
 
+<<<<<<< Updated upstream
 public class Complejidad {
 // Si el array mide 100
+=======
+import java.util.ArrayList;
+import java.util.List;
+
+public class Complejidad {
+	
+		// Si el array mide 100
+>>>>>>> Stashed changes
 		// O(n-1+1+1) => O(n)
 	// Devolver la suma de todos los enteros de un array
 	public static int sumIntArray(int[] lista) {
@@ -87,3 +96,4 @@ public class Complejidad {
 	return C;
 	}
 }
+

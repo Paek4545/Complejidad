@@ -1,6 +1,10 @@
 package es.upm.aled.complejidad;
 
 public class LinearSearch {
+<<<<<<< Updated upstream
+=======
+	
+>>>>>>> Stashed changes
 	// Hemos implementado indexOf()
 	// Devuelve la posición, -1 si no está
 public static int linearSearch(int[] lista, int valor) {
@@ -13,5 +17,9 @@ public static int linearSearch(int[] lista, int valor) {
 	}
 	// No estaba
 	return -1;
+<<<<<<< Updated upstream
  }
+=======
+	}
+>>>>>>> Stashed changes
 }
