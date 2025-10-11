@@ -31,7 +31,7 @@ public class BinarySearch {
 		}
 	 // Paso recursivo
 		if (v > value) {
-			return binarySearch(list, lo, me, value);	
+			return binarySearch(list, lo, me, value); // Como el intervalo va entre [...) no hace falta el -1 (gracias a Math.floor)
 		} else {
 			return binarySearch(list, me+1, hi, value);
 		}
