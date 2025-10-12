@@ -19,20 +19,29 @@ public class BinarySearch {
 		} while(lo<hi);
 		return -1;
 	} */
-	 // Código general
-		int me = (int) Math.floor(lo + (hi-lo)/2); // rango válido mientras que lo <= hi
+	 // Código general (igual que en el primer caso)
+		int me = (int) Math.floor(lo + (hi-lo)/2); // Búsqueda válida mientras que lo <= hi
+		// Obtenemos el valor en la posción media del array
 		int v = list[me];	
 	 // Caso base (2 casos base)
-		
+		// Primer caso base: comprobamos si NO se cumple la condición de que hi <= lo, si no lo cumple
+		// significa que el elemento buscado no se encuentra en el array, por lo que devolvemos -1
 		if (lo>hi) {
 			return -1;
+		// Segundo caso base: comprobamos si el elemento de la lista es igual al valor buscado, si lo es, devolvemos
+		// el valor medio de hi y lo (que sería el valor que estamos buscando)
 		} else if (v == value) {
 			return me;
 		}
 	 // Paso recursivo
+		// Comprobamos si la valor de la posición de la posisción de la lista es mayor que el valor buscado, 
+		// si lo es:
 		if (v > value) {
+		// Nos encontramos en el intervalo [lo, me), donde usando el método recursivo seguimos buscando el valor 
 			return binarySearch(list, lo, me, value); // Como el intervalo va entre [...) no hace falta el -1 (gracias a Math.floor)
 		} else {
+		// En caso de que el valor de la posición de la lista se encuentre por debajo, el método pone el intervalo
+		// entre el valor medio y hi, todo el rato mientras se cumpla la condición
 			return binarySearch(list, me+1, hi, value);
 		}
 	}
