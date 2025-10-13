@@ -27,7 +27,8 @@ public static int linearSearch2(int[] lista, int valor, int index) {
 	if (lista[index] == valor) {
 		return index;
 	}
-	// Paso recursivo: buscamos en el resto del array
+	// Paso recursivo: buscamos en el resto del array, si no se encuentra en el primer índice, va aumentando de
+	// manera recursiva
 	return linearSearch2(lista, valor, index+1);
 }	
 public static void main(String[] args) {
