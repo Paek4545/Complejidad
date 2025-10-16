@@ -6,7 +6,7 @@ import java.util.Arrays;
 	 * 	Si el array que se pasa como parámetro es: 
 	{1.0,3.0,7.0,8.0,11.0,16.0,21.0,25.0} cuantas veces se ejecuta el cuerpo del 
 	while si el número buscado es 3.0. 
-	 // Número de veces que se ejecuta el while: 2
+	 // Número de veces que se ejecuta el while hasta encontrar 3.0: 2
 	 
 	 
 	Si el orden del array fuese descendente, ¿como deberíamos cambiar el 
